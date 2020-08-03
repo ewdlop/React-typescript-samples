@@ -62,49 +62,49 @@ const TestList: React.FC = () => {
                 <div className="parallax-image img2">
                     <div className="masonry">
                         <div className="item">
-                            <img src='https://i.pinimg.com/236x/06/29/70/062970b4a7f0ab403c0e693e7ec8cea6.jpg' />
+                            <img src='https://d2jv9003bew7ag.cloudfront.net/uploads/Geometric-Forms-in-Art.-Image-via-thevirtualinstructor.com_.jpg' />
                             <div className="overlay">
                                 <div className="text">Hello World</div>
                             </div>
                         </div>
                         <div className="item">
-                            <img src='https://i.pinimg.com/236x/66/fc/f8/66fcf805c084cda7a56ac7e7cceca359.jpg' />
+                            <img src='https://th.bing.com/th/id/OIP.MJZzNhNtntF4kquZ9rEK-gHaFC?pid=Api&rs=1' />
                             <div className="overlay">
                                 <div className="text">Hello World</div>
                             </div>
                         </div>
                         <div className="item">
-                            <img src='https://i.pinimg.com/236x/8c/0f/03/8c0f03a51af26cd9ff050d937ac9dc2b.jpg' />
+                            <img src='https://images.designtrends.com/wp-content/uploads/2016/11/26133943/3D-Abstract-Geometric-Polygonal-Shape.jpg' />
                             <div className="overlay">
                                 <div className="text">Hello World</div>
                             </div>
                         </div>
                         <div className="item">
-                            <img src='https://i.pinimg.com/236x/61/65/08/616508193c671f7525b8308e32664901.jpg' />
+                            <img src='https://img.freepik.com/free-photo/3d-depth-realism-background-3d-rendering_9941-215.jpg?size=626&ext=jpg' />
                             <div className="overlay">
                                 <div className="text">Hello World</div>
                             </div>
                         </div>
                         <div className="item">
-                            <img src='https://i.pinimg.com/236x/c1/33/54/c1335491e362fe6f0fa2fb7c2c991341.jpg' />
+                            <img src='https://introspecs.com/wp-content/uploads/2013/07/folded6.jpg' />
                             <div className="overlay">
                                 <div className="text">Hello World</div>
                             </div>
                         </div>
                         <div className="item">
-                            <img src='https://i.pinimg.com/236x/54/f7/e1/54f7e120c9b779c8ff0d2b34da93f854.jpg' />
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/a/ae/BallsRender.png' />
                             <div className="overlay">
                                 <div className="text">Hello World</div>
                             </div>
                         </div>
                         <div className="item">
-                            <img src='https://i.pinimg.com/236x/8c/4e/15/8c4e15ae93f206459d8c5f7c8a032252.jpg' />
+                            <img src='https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/shape-and-shadow-tom-mc-nemar.jpg' />
                             <div className="overlay">
                                 <div className="text">Hello World</div>
                             </div>
                         </div>
                         <div className="item">
-                            <img src='https://i.pinimg.com/236x/02/74/08/02740885f3a909dfca1afa218191dc8b.jpg' />
+                            <img src='https://www.pufferbelliestoys.com/components/com_virtuemart/shop_image/product/full/optical_ill_35dbc8013085bc.jpg' />
                             <div className="overlay">
                                 <div className="text">Hello World</div>
                             </div>
