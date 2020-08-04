@@ -10,9 +10,11 @@ html {
 
 /* The Masonry Container */
 .masonry {
-  margin: 1em auto;
-  max-width: 950px;
-  column-gap: 1.5em;
+  margin: auto;
+  max-width: 1515px;
+  column-gap: 0.0em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 /* The Masonry Brick */
