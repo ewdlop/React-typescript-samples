@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { reducer } from '../React-Redux/reducer';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { ConnectedTasksList } from '../React-Redux/TaskList';
 import { Carousel } from 'react-bootstrap';
+import * as THREE from 'three';
 import './Test.css';
 import js_image from './js.png';
 import carousel_image1 from './image1.jpg';
@@ -59,8 +60,11 @@ const store = createStore(reducer);
 const TestList: React.FC = () => {
 
     const [myState, setMyState] = useState<myState>({ scroller: 0 });
+    const myMount = useRef<HTMLDivElement>(null);
+    // const scene : THREE.Scene = 0;
 
     useEffect(() => {
+
         const handleScroll = () => {
             setMyState({ scroller: document.documentElement.scrollTop });
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -76,7 +80,9 @@ const TestList: React.FC = () => {
             }
         }
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
     }, [myState])
 
     return (
@@ -236,6 +242,9 @@ const TestList: React.FC = () => {
                     </div>
                 </div>
             </div>
+            {/* <div
+                style={{ width: '400px', height: '400px' }}
+                ref={myMount} /> */}
         </Provider>
     );
 }

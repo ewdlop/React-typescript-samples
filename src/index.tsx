@@ -5,10 +5,11 @@ import App from './app/App';
 import Task from './features/Task/Task'
 import Test from './features/Test/Test'
 import * as serviceWorker from './serviceWorker';
+import ThreeScene from './features/Three/three';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Test />
+    <ThreeScene/>
   </React.StrictMode>,
   document.getElementById('root')
 );
