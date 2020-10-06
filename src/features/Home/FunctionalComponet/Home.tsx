@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { NavLink } from 'react-router-dom'
 import { reducer } from '../../Task/Redux/reducer';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
@@ -84,14 +85,15 @@ const Home: React.FC = () => {
         }
     }, [myState])
 
+    const activeStyle = { color: "#F15B2A" };
+    
     return (
         <Provider store={store}>
             {/* <ConnectedTasksList/> */}
             <div>
                 <div id="navbar">
-                    <a href="#home">Home</a>
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
+                    <NavLink to="/" activeStyle={activeStyle} exact>Home</NavLink>
+                    <NavLink to="/ThreeJSScene" activeStyle={activeStyle}>ThreeJSScene</NavLink>
                 </div>
                 <div className="parallax-image img1">
                     <div style={homePageTopSection}>

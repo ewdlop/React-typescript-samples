@@ -1,30 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './app/App';
-import Task from './features/Task/ClassComponent/Task'
-import Home from './features/Home/FunctionalComponet/Home'
+import './index.css';
 import * as serviceWorker from './serviceWorker';
-import ThreeScene from './features/ThreeJS/ClassComponet/ThreeScene';
-import Box from './features/ThreeJS/ThreeSceneFiber';
-import { Canvas } from 'react-three-fiber'
- 
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <Home/>
+    <Router>
+      <App/>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// ReactDOM.render(
-//   <Canvas>
-//     <ambientLight />
-//     <pointLight position={[10, 10, 10]} />
-//     <Box position={[-1.2, 0, 0]} />
-//     <Box position={[1.2, 0, 0]} />
-//   </Canvas>,
-//   document.getElementById('root')
-// )
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
