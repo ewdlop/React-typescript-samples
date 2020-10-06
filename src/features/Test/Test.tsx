@@ -1,55 +1,54 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { reducer } from '../React-Redux/reducer';
+import { reducer } from '../Task/Redux/reducer';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { ConnectedTasksList } from '../React-Redux/TaskList';
 import { Carousel } from 'react-bootstrap';
 import * as THREE from 'three';
-import './Test.css';
-import js_image from './js.png';
-import carousel_image1 from './image1.jpg';
-import carousel_image2 from './image2.jpg';
-import carousel_image3 from './image3.jpg';
+import './css/Test.css';
+import js_image from './Images/js.png';
+import carousel_image1 from './Images/image1.jpg';
+import carousel_image2 from './Images/image2.jpg';
+import carousel_image3 from './Images/image3.jpg';
+// import { ConnectedTasksList } from '../Task/Redux/TaskList'
 
-const mystyle = {
+const homePageTopSection = {
     textAlign: 'center' as 'center',
     height: '600px',
     paddingTop: '5em'
 };
 
-const mystyle2 = {
-    backgroundColor: 'rgba(255, 255, 255, 0.85)',
-    textAlign: 'center' as 'center',
-    height: '800px'
-};
+// 
 
-const mystyle3 = {
+const homePageBottomSection = {
     width: '900px',
     height: '900px',
     marginLeft: '50px',
     marginTop: '-220px'
 };
 
+// const mystyle2 = {
+// //     backgroundColor: 'rgba(255, 255, 255, 0.85)',
+// //     textAlign: 'center' as 'center',
+// //     height: '800px'
+// // };
+// const mystyle4 = {
+//     backgroundColor: 'rgba(255, 255, 255, 0)',
+//     textAlign: 'center' as 'center',
+//     height: '800px'
+// };
 
-const mystyle4 = {
-    backgroundColor: 'rgba(255, 255, 255, 0)',
-    textAlign: 'center' as 'center',
-    height: '800px'
-};
+// const mystyle5 = {
+//     backgroundColor: 'rgba(255, 85, 0, 1)',
+//     textAlign: 'center' as 'center',
+//     height: '300px'
+// };
 
-const mystyle5 = {
-    backgroundColor: 'rgba(255, 85, 0, 1)',
-    textAlign: 'center' as 'center',
-    height: '300px'
-};
-
-
-const texts = {
-    textAlign: 'center' as 'center',
-    fontWeight: 'bold' as 'bold',
-    fontSize: '10em',
-    verticalAlign: 'middle' as 'middle'
-};
+// const texts = {
+//     textAlign: 'center' as 'center',
+//     fontWeight: 'bold' as 'bold',
+//     fontSize: '10em',
+//     verticalAlign: 'middle' as 'middle'
+// };
 
 interface myState {
     scroller: number;
@@ -95,7 +94,7 @@ const TestList: React.FC = () => {
                     <a href="#contact">Contact</a>
                 </div>
                 <div className="parallax-image img1">
-                    <div style={mystyle}>
+                    <div style={homePageTopSection}>
                         <Carousel>
                             <Carousel.Item>
                                 <img src={carousel_image1}
@@ -237,7 +236,7 @@ const TestList: React.FC = () => {
                         <path fill="#ff5500" fillOpacity="1" d="M0,192L11.4,202.7C22.9,213,46,235,69,202.7C91.4,171,114,85,137,64C160,43,183,85,206,117.3C228.6,149,251,171,274,197.3C297.1,224,320,256,343,277.3C365.7,299,389,309,411,288C434.3,267,457,213,480,165.3C502.9,117,526,75,549,48C571.4,21,594,11,617,21.3C640,32,663,64,686,74.7C708.6,85,731,75,754,74.7C777.1,75,800,85,823,74.7C845.7,64,869,32,891,32C914.3,32,937,64,960,117.3C982.9,171,1006,245,1029,245.3C1051.4,245,1074,171,1097,154.7C1120,139,1143,181,1166,218.7C1188.6,256,1211,288,1234,293.3C1257.1,299,1280,277,1303,224C1325.7,171,1349,85,1371,58.7C1394.3,32,1417,64,1429,80L1440,96L1440,0L1428.6,0C1417.1,0,1394,0,1371,0C1348.6,0,1326,0,1303,0C1280,0,1257,0,1234,0C1211.4,0,1189,0,1166,0C1142.9,0,1120,0,1097,0C1074.3,0,1051,0,1029,0C1005.7,0,983,0,960,0C937.1,0,914,0,891,0C868.6,0,846,0,823,0C800,0,777,0,754,0C731.4,0,709,0,686,0C662.9,0,640,0,617,0C594.3,0,571,0,549,0C525.7,0,503,0,480,0C457.1,0,434,0,411,0C388.6,0,366,0,343,0C320,0,297,0,274,0C251.4,0,229,0,206,0C182.9,0,160,0,137,0C114.3,0,91,0,69,0C45.7,0,23,0,11,0L0,0Z">
                         </path>
                     </svg>
-                    <div style={mystyle3}>
+                    <div style={homePageBottomSection}>
                         <img src={js_image} height='700px' width='700px' />
                     </div>
                 </div>
