@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './app/App';
 import Task from './features/Task/ClassComponent/Task'
-import Test from './features/Test/Test'
+import Home from './features/Home/FunctionalComponet/Home'
 import * as serviceWorker from './serviceWorker';
 import ThreeScene from './features/ThreeJS/ClassComponet/ThreeScene';
 import Box from './features/ThreeJS/ThreeSceneFiber';
@@ -11,7 +11,7 @@ import { Canvas } from 'react-three-fiber'
  
 ReactDOM.render(
   <React.StrictMode>
-    <Test/>
+    <Home/>
   </React.StrictMode>,
   document.getElementById('root')
 );

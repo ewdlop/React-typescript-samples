@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { reducer } from '../Task/Redux/reducer';
+import { reducer } from '../../Task/Redux/reducer';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { Carousel } from 'react-bootstrap';
 import * as THREE from 'three';
-import './css/Test.css';
-import js_image from './Images/js.png';
-import carousel_image1 from './Images/image1.jpg';
-import carousel_image2 from './Images/image2.jpg';
-import carousel_image3 from './Images/image3.jpg';
+import '../css/Home.css';
+import js_image from '../Images/js.png';
+import carousel_image1 from '../Images/image1.jpg';
+import carousel_image2 from '../Images/image2.jpg';
+import carousel_image3 from '../Images/image3.jpg';
 // import { ConnectedTasksList } from '../Task/Redux/TaskList'
 
 const homePageTopSection = {
@@ -56,7 +56,7 @@ interface myState {
 
 const store = createStore(reducer);
 
-const TestList: React.FC = () => {
+const Home: React.FC = () => {
 
     const [myState, setMyState] = useState<myState>({ scroller: 0 });
     const myMount = useRef<HTMLDivElement>(null);
@@ -248,4 +248,4 @@ const TestList: React.FC = () => {
     );
 }
 
-export default TestList;
+export default Home;
