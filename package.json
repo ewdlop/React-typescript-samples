@@ -20,6 +20,7 @@
     "react-scripts": "3.4.1",
     "react-three-fiber": "^4.2.18",
     "redux": "^4.0.5",
+    "reselect": "^4.0.0",
     "three": "^0.119.1",
     "typescript": "^3.9.6"
   },
