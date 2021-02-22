@@ -5,7 +5,7 @@ interface Props {
     position: number[]
 }
 
-const Box: React.FC<Props> = ({ position }: Props) => {
+const Box: React.FC<Props> = ({ position }) => {
     // This reference will give us direct access to the mesh
     const mesh = useRef<THREE.Mesh>(null)
 
@@ -29,7 +29,7 @@ const Box: React.FC<Props> = ({ position }: Props) => {
         <mesh
             {...position}
             ref={mesh}
-            scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
+            scale={active ? [2, 2, 2] : [1, 1, 1]}
             onClick={(e) => setActive(!active)}
             onPointerOver={(e) => setHover(true)}
             onPointerOut={(e) => setHover(false)}>

@@ -60,7 +60,7 @@ class ThreeScene extends React.Component {
     render(){
         return(
           <div
-            style={{ width: '400px', height: '400px' }}
+            style={{ width: '1920px', height: '1080px' }}
             ref={this.mount}
           />
         )

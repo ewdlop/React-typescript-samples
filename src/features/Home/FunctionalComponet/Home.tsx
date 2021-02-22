@@ -19,7 +19,6 @@ const homePageTopSection = {
 };
 
 // 
-
 const homePageBottomSection = {
     width: '900px',
     height: '900px',

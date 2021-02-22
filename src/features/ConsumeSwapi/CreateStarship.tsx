@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import usePostStarshipService, {
+import StarshipService, {
     PostStarship
-} from '../ConsumeSwapi/services/usePostStarshipService'
+} from './services/StarshipService'
 import CSS from 'csstype';
 import { NavLink } from 'react-router-dom'
 
@@ -16,14 +16,13 @@ const CreateStarship: React.FC = () => {
         crew: '',
         passengers: '',
         cost_in_credits: '',
-        number: 0
     };
 
     const [starship, setStarship] = useState<PostStarship>(
         initialStarshipState
     );
 
-    const { service, publishStarship } = usePostStarshipService();
+    const { postService, publishStarship } = StarshipService();
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         event.persist();
@@ -79,20 +78,23 @@ const CreateStarship: React.FC = () => {
             <form onSubmit={handleFormSubmit}>
                     <input
                         type="text"
-                        name="number"
-                        value={starship.number}
+                        name="name"
+                        value={starship.name}
                         onChange={handleChange}
                     />
             </form>
             </div>
 
-            {service.status === 'loading' && <div>Sending...</div>}
-            {service.status === 'loaded' && (
+            {postService.status === 'loading' && <div>Sending...</div>}
+            {postService.status === 'loaded' && (
                 <div>
-                    <h2>{service.payload.name}</h2>
+                    <h2>Name: {postService.payload.name}</h2>
+                    <h2>Crew: {postService.payload.crew}</h2>
+                    <h2>Passengers: {postService.payload.passengers}</h2>
+                    <h2>Cost in Credits:{postService.payload.cost_in_credits}</h2>
                 </div>
             )}
-            {service.status === 'error' && <div>Error message</div>}
+            {postService.status === 'error' && <div>Error message</div>}
         </div>
     );
 };
