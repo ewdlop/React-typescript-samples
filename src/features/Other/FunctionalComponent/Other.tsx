@@ -34,5 +34,5 @@ const reducer =(people: person[], action: action) => {
             return person;
         })
     }
-
+}
 //const [state, dispatch] = useReducer(reducer, people)

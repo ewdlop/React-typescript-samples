@@ -94,6 +94,7 @@ const Home: React.FC = () => {
                 <div id="navbar">
                     <NavLink to="/" activeStyle={activeStyle} exact>Home</NavLink>
                     <NavLink to="/ThreeJSScene" activeStyle={activeStyle}>ThreeJSScene</NavLink>
+                    <NavLink to="/StarShip" activeStyle={activeStyle}>StarShip</NavLink>
                 </div>
                 <div className="parallax-image img1">
                     <div style={homePageTopSection}>
@@ -139,13 +140,13 @@ const Home: React.FC = () => {
                         <div style={texts}>Test</div>
                     </div> */}
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                            <path fill="#0099ff" fill-opacity="1" d="M0,96L720,256L1440,128L1440,320L720,320L0,320Z">
+                            <path fill="#0099ff" fillOpacity="1" d="M0,96L720,256L1440,128L1440,320L720,320L0,320Z">
                             </path>
                         </svg>
                 </div>
                 <div className="parallax-image img2 gap">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                        <path fill="#0099ff" fill-opacity="1" d="M0,0L0,128L84.7,128L84.7,160L169.4,160L169.4,96L254.1,96L254.1,320L338.8,320L338.8,288L423.5,288L423.5,224L508.2,224L508.2,64L592.9,64L592.9,96L677.6,96L677.6,224L762.4,224L762.4,256L847.1,256L847.1,128L931.8,128L931.8,32L1016.5,32L1016.5,32L1101.2,32L1101.2,192L1185.9,192L1185.9,288L1270.6,288L1270.6,64L1355.3,64L1355.3,256L1440,256L1440,0L1355.3,0L1355.3,0L1270.6,0L1270.6,0L1185.9,0L1185.9,0L1101.2,0L1101.2,0L1016.5,0L1016.5,0L931.8,0L931.8,0L847.1,0L847.1,0L762.4,0L762.4,0L677.6,0L677.6,0L592.9,0L592.9,0L508.2,0L508.2,0L423.5,0L423.5,0L338.8,0L338.8,0L254.1,0L254.1,0L169.4,0L169.4,0L84.7,0L84.7,0L0,0L0,0Z">
+                        <path fill="#0099ff" fillOpacity="1" d="M0,0L0,128L84.7,128L84.7,160L169.4,160L169.4,96L254.1,96L254.1,320L338.8,320L338.8,288L423.5,288L423.5,224L508.2,224L508.2,64L592.9,64L592.9,96L677.6,96L677.6,224L762.4,224L762.4,256L847.1,256L847.1,128L931.8,128L931.8,32L1016.5,32L1016.5,32L1101.2,32L1101.2,192L1185.9,192L1185.9,288L1270.6,288L1270.6,64L1355.3,64L1355.3,256L1440,256L1440,0L1355.3,0L1355.3,0L1270.6,0L1270.6,0L1185.9,0L1185.9,0L1101.2,0L1101.2,0L1016.5,0L1016.5,0L931.8,0L931.8,0L847.1,0L847.1,0L762.4,0L762.4,0L677.6,0L677.6,0L592.9,0L592.9,0L508.2,0L508.2,0L423.5,0L423.5,0L338.8,0L338.8,0L254.1,0L254.1,0L169.4,0L169.4,0L84.7,0L84.7,0L0,0L0,0Z">
                         </path>
                     </svg>
                     <div className="masonry">

@@ -5,6 +5,7 @@ import './App.css';
 import Task from '../features/Task/ClassComponent/Task'
 import Home from '../features/Home/FunctionalComponet/Home'
 import ThreeSceneFiber from '../features/ThreeJS/FunctionalComponent/ReactThreeFiber/ThreeSceneFiber';
+import CreateStarship from '../features/ConsumeSwapi/CreateStarship'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/ThreeJSScene" component={ThreeSceneFiber}/>
+          <Route path="/StarShip" component={CreateStarship}/>
       </Switch>
     </div>
   );
