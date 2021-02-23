@@ -1,5 +1,5 @@
-import React, { useCallback, useMemo } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React, { useMemo } from 'react'
+import { useSelector } from 'react-redux'
 import { createSelector } from 'reselect'
 import { Task } from "./types";
 
@@ -29,34 +29,3 @@ export const TodoCounterForIsDoneValue = ({ isDone } : IProps) => {
 
     return (<div>{numOfTodosWithIsDoneValue}</div>)
 }
-
-interface IValue
-{
-  value :any;
-}
-
-interface IValue2
-{
-  onIncrement : () => {
-    type:string
-  };
-}
-
-export const CounterComponent = ({ value } : IValue) => {
-    const dispatch = useDispatch()
-    const incrementCounter = useCallback(
-      () => dispatch({ type: 'increment-counter' }),
-      [dispatch]
-    )
-  
-    return (
-      <div>
-        <span>{value}</span>
-        <MyIncrementButton onIncrement={incrementCounter} />
-      </div>
-    )
-  }
-  
-  export const MyIncrementButton = React.memo(({ onIncrement } : IValue2) => (
-    <button onClick={onIncrement}>Increment counter</button>
-  ))

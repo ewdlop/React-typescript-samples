@@ -3,7 +3,7 @@ import { Canvas } from 'react-three-fiber';
 import Box from './Box';
 const ThreeSceneFiber: React.FC = () => {
     return(
-        <Canvas >
+        <Canvas>
             <ambientLight />
             <pointLight position={[10, 10, 10]} />
             <Box position={[-1.2, 50, 0]} />
